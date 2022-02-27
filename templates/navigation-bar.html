@@ -1,0 +1,72 @@
+{% load static %}
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mw-100" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'main_site:home' %}"><img style="width: 70px; border-radius:10px ;" src="{% static 'img/eicc_logo.jpg' %}" alt="EICC logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav_wrapper" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'main_site:home' %}">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ABOUT US
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">THEME FOR {% now "Y" %}</a></li>
+            <li><a class="dropdown-item" href="{% url 'main_site:contact-us' %}">CONTACT US</a></li>
+            <li><a class="dropdown-item" href="{% url 'main_site:prayer-request' %}">PRAYER REQUEST</a></li>
+            <li><a class="dropdown-item" href="#">PROJECTS/ACTIVITIES</a></li>
+            <li><a class="dropdown-item" href="#">BOARD/COMMITEE</a></li>
+            <li><a class="dropdown-item" href="#">POWER AND GLORY CONFERENCE</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MINISTRIES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Preaching/Teaching</a></li>
+            <li><a class="dropdown-item" href="#">Outreach</a></li>
+            <li><a class="dropdown-item" href="#">Children’s Ministry</a></li>
+            <li><a class="dropdown-item" href="#">Praise and Worship</a></li>
+            <li><a class="dropdown-item" href="#">Counseling</a></li>
+            <li><a class="dropdown-item" href="#">Hospitality</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Praise and Worship</a></li> -->
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">MISSIONS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MEDIA
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Gallery</a></li>
+            <li><a class="dropdown-item" href="#">Sermons</a></li>
+            <li><a class="dropdown-item" href="#">Video</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            NEXT STEPS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">MEMBERSHIP</a></li>
+            <li><a class="dropdown-item" href="#">BAPTISM</a></li>
+            <li><a class="dropdown-item" href="#">SALVATION</a></li>
+            <li><a class="dropdown-item" href="">SERVE</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>

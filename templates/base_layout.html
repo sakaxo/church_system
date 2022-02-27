@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>EICC | {% block title %}Hello, world!{% endblock title %}</title>
+    {% include 'base_head_tags.html' %}
+
+    {% block meta_tag %}{% endblock meta_tag %}
+  </head>
+  <body>
+    {% include 'header.html' %}
+
+    {% include 'navigation-bar.html' %}
+
+    <main class="" style="background-color: whitesmoke;">
+      <div class="content_title">
+        <h2 class="text-centker">{% block contentTitle %}{% endblock contentTitle %}</h2>
+      </div>
+
+      {% block main %}
+          home page
+      {% endblock main %}
+    </main>
+    {% include 'footer.html' %}
+    {% include 'base_scripts.html' %}
+  </body>
+</html>

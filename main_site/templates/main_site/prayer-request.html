@@ -1,0 +1,162 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+    Prayer request
+{% endblock title %}
+
+{% block meta_tag %}
+{% endblock meta_tag %}
+
+{% block contentTitle %}
+    PRAYER REQUEST FORM
+{% endblock contentTitle %}
+
+{% block main %}
+<section class="prayer-request mt-3 mx-3 p-sm-4 ">
+    <div class="row ">
+        <div class="col-xs-10 col-lg-9 mx-auto p-3">
+            <form action="" method="" role="form">
+                <fieldset class="row mb-3">
+                    <legend class="col-12 mb-3">
+                        <h3>Personal Prayer Request</h3>
+                    </legend>
+                    <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">First name</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-user"></i></div>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Last name</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-user"></i></div>
+                            <input type="text" class="form-control" placeholder="Last name">
+                         </div>
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-envelope"></i></div>
+                            <input type="text" class="form-control" placeholder="Email Address" aria-describedby="emailHelp">
+                        </div>
+                        <div id="emailHelp" class="form-text ms-2">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Phone</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-phone"></i></div>
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 mb-3">
+                        <label for="" class="form-label">Please share your prayer request with us</label>
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Your request here..."></textarea>
+                    </div>
+                        <!-- check to make other fieldsets visible -->
+                    <div class="form-check form-switch  ms-4" >
+                        <input class="form-check-input" type="checkbox" value="" id="loveOneRequest" onclick="displayElementWithTheIDpassed('love_one_request')">
+                        <label class="form-check-label" for="loveOneRequest">
+                            I want to make a Prayer Request for a loved one?
+                        </label>
+                    </div>
+                    <div class="form-check form-switch ms-4" >
+                      <input class="form-check-input" type="checkbox" value="" id="requestContactMe" onclick="displayElementWithTheIDpassed('mode_of_contact')">
+                      <label class="form-check-label" for="requestContactMe">
+                        I want Prayer team to contact me?
+                      </label>
+                    </div>  <!-- check to make other fieldsets visible -->
+                </fieldset>
+
+                <fieldset class="row mb-2" id="love_one_request" style="display: none;">
+                    <legend class="col-12 mb-1">
+                        <h3>Prayer Request For A Loved One</h3>
+                    </legend>
+
+                    <div class="col-sm-12">
+                        <p class="lead">Please share details of your loved one</p>
+                    </div>
+
+                    <div class="col-sm-12 mb-3">
+                        <label for="" class="form-label">Full name</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-user"></i></div>
+                            <input type="text" class="form-control" placeholder="Full name">
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-sm-inline-flex">
+                    <div class="col-sm-6 mb-3 me-1 ">
+                        <label for="" class="form-label">Phone No.</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-phone"></i></div>
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mb-3 ">
+                        <label for="" class="form-label">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa fa-solid fa-envelope"></i></div>
+                            <input type="text" class="form-control" placeholder="Email address">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-12 mb-3">
+                        <label for="" class="form-label">Please share your prayer request with us</label>
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Your request here..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-row" id="mode_of_contact" style="display: none;">
+                    <legend class="col-sm-12">
+                        <p class="lead">Please tick to select your preffered mode of contact.</p>
+                    </legend>
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="checkbox" value="" id="phoneCall">
+                        <label class="form-check-label" for="phoneCall">
+                            Phone call
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="Whatsapp" onclick="displayElementWithTheIDpassed('Whatsapp-no')">
+                      <label class="form-check-label" for="whatsapp">
+                        Whatsapp
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="sms">
+                        <label class="form-check-label" for="sms">
+                            SMS
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="E-mail">
+                      <label class="form-check-label" for="E-mail" onclick=>
+                        E-mail
+                      </label>
+                    </div>
+
+                    <div class="col-sm-5 my-2" id="Whatsapp-no" style="display: none;">
+                        <label for="" class="form-label">Whatsapp no. (if different)</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </fieldset>
+
+                <div class="row mb-3 text-center">
+                    <div class=" py-2">
+                        <input type="submit" class="btn btn-success" value="Submit Prayer Request">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock main %}
+

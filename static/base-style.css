@@ -1,0 +1,320 @@
+:root {
+  /*headeer variables*/
+  --header-bg-color: #292b2c;
+  --header-link-color: white;
+  --header-link-hover-color: gray;
+  --header-border-bottom-color: gray;
+
+  /*navbar variables*/
+  --navbar-link-color: white;
+  --navbar-link-hover-color: gray;
+  --navbar-dropdown-menu-bg-color: #292b2c;
+  --navbar-dropdown-menu-link-color: white;
+  --navbar-dropdown-menu-link-hover-color: gray;
+  --navbar-dropdown-menu-link-hover-bg-color: none;
+  /*--navbar-dropdown-menu-li-borderbottom-color: orange;*/
+
+  /*footer variables*/
+  --newsletter-subscription-color: white;
+  --newsletter-subscription-bg-color: black;
+  --copyright-color: white;
+  --copyright-bg-color: black;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+  min-height: 100vh;
+}
+
+/*scrollbar style*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}   /*scroolbar*/
+
+
+/* header style start */
+header{
+  background-color: var(--header-bg-color);
+}
+
+.wrapper{
+  padding: 1%;
+  border-bottom: 1px solid var(--header-border-bottom-color);
+}
+
+.header-left{
+  margin-left: 3%;
+  padding-left: 3%;
+}
+
+.header_Right{
+  text-align: right;
+}
+
+.header-left>div>span>a,.header-right>div>span>a{
+  text-decoration: none;
+  color: var(--header-link-color);
+  transition: color 1.5s;
+}
+
+.header a:hover{
+  color: var(--header-link-hover-color);
+}
+
+.header a{
+  padding: 5px;
+}
+
+.header-center-element i{
+  padding-right: 4px;
+}   /* header style end */
+
+
+/* navigation style start */
+nav a{
+  letter-spacing: 1.5px;
+}
+
+.nav-link{
+  color: var(--navbar-link-color) !important;
+  transition: color 0.4s !important;
+}
+
+.nav-link:hover{
+  color: var(--navbar-link-hover-color) !important;
+}
+
+.navbar-brand{
+  margin-left: 3%;
+}
+
+.navbar-toggler{
+  margin-right: 3%;
+}
+
+.dropdown-menu{
+  border-radius: 10px;
+  background-color: var(--navbar-dropdown-menu-bg-color);
+  min-width: 260px !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+}
+
+.dropdown-menu a{
+  color: var(--navbar-dropdown-menu-link-color);
+  padding:10px 20px;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.dropdown-menu a:hover{
+  color: var(--navbar-dropdown-menu-link-hover-color);
+  background:var(--navbar-dropdown-menu-link-hover-bg-color);
+}
+/*
+.dropdown-menu li:not(:last-child){
+  border-bottom: 0.3px solid var(--navbar-dropdown-menu-li-borderbottom-color);
+}
+*/
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown:hover .dropdown-toggle{
+  color: var(--navbar-link-hover-color) !important;
+} /* navigation style end */
+
+@media only screen and (max-width: 991px){
+  .nav_wrapper>ul{
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .wp_header_left{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+  .header-right{
+    display: none;
+  }
+
+  .header-center-element{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .header-hide-1{
+    display: none;
+  }
+
+  .navbar-brand{
+    display: none;
+  }
+
+  .navbar-toggler{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/*footer start*/
+.newsletter-subscription{
+  background-color: var(--newsletter-subscription-bg-color);
+  color: var(--newsletter-subscription-color);
+  padding: 5% 3%;
+  opacity: .8;
+}
+
+.newsletter-subscription h4{
+  padding: 2.5%;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 991px){
+  .footer-socials{
+    margin-top: 15px;
+      padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 670px){
+  .newsletter-subscription .wp_width_100{
+    width: 100%;
+  }
+}
+
+.footer-socials-links>span> a{
+  padding: 1.5%;
+  color:  var(--newsletter-subscription-color);
+  transition: color 1.2s;
+}
+
+.footer-socials-links>span> a:hover{
+  color: gray;
+}
+
+.main-footer{
+  padding: 1.5rem 3rem;
+  background-color: black;
+  opacity: .9;
+}
+
+.main-footer .wp_margin_down{
+  padding-bottom: 1rem;
+  margin-bottom: 2px;
+}
+
+.main-footer .about-text{
+  color: gray;
+}
+
+.main-footer .header-text>h2{
+  padding: 1.2rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: whitesmoke;
+  white-space: nowrap;
+  font-size: 25px;
+  letter-spacing: .5px;
+}
+
+.wp_ttt{
+  margin-top: 0;
+  padding-top: 0;
+}
+.main-footer-links ul{
+  list-style: none;
+  line-height:170%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer-links ul a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: gray;
+  font-size: large;
+  transition: color .5s;
+}
+
+.main-footer-links ul a:hover{
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.copyright{
+  background-color: var(--copyright-bg-color);
+  padding: .4%;
+  color: var(--copyright-color);
+  font-style: italic;
+}
+.copyright .copy_m{
+  margin-top: 1%;
+}
+.copyright .copy_m>p{
+    font-size: small;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: var(--copyright-color);
+}
+
+/* for base_layout.html */
+.content_title{
+    padding: 4em 2em;
+    background-color: DodgerBlue;
+
+
+}
+
+.content_title>h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

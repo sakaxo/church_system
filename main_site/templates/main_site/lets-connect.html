@@ -1,0 +1,151 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+    Lets connect
+{% endblock title %}
+
+{% block meta_tag %}
+{% endblock meta_tag %}
+
+{% block contentTitle %}
+    LETS CONNECT
+{% endblock contentTitle %}
+
+{% block main %}
+<section class="row m-3 p-sm-4 connect_section">
+    <div class="col-sm-12">
+        <form action="">
+            <fieldset class="row mb-3">
+                <legend class="col-sm-12 text-center">
+                    <h3> Fill the form to connect with us</h3>
+                </legend>
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">First name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Last name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Phone No.</label>
+                        <input type="text" class="form-control" placeholder="Phone">
+                </div>
+            </fieldset>
+
+            <fieldset class="row mb-3">
+                <legend class="col-sm-12 mb-3">
+                    Location
+                </legend>
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">Country</label>
+                        <input type="text" class="form-control" placeholder="Country">
+                </div>
+                <div class="col-sm-6 mb-3">
+                        <label for="" class="form-label">City</label>
+                        <input type="text" class="form-control" placeholder="City">
+                </div>
+            </fieldset>
+
+            <fieldset class="form-row mb-3" >
+                    <legend class="col-sm-12">
+                        <p class="lead">I would like more information or to talk to a pastor about</p>
+                    </legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="talk-to" value="" id="BeingBornAgain">
+                        <label class="form-check-label" for="BeingBornAgain">
+                            Being Born Again
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="talk-to" value=""  id="firstFruits-and-offering">
+                      <label class="form-check-label" for="firstFruits-and-offering">
+                        First Fruits and Offering
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="talk-to" value="" id="bible">
+                        <label class="form-check-label" for="bible">
+                            The Bible
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="talk-to" value="" id="salvation">
+                      <label class="form-check-label" for="salvation">
+                        Salvation
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="talk-to" value="" id="counselling">
+                      <label class="form-check-label" for="counselling">
+                        Counselling
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="talk-to" value="" id="membership">
+                      <label class="form-check-label" for="membership">
+                        Membership
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="talk-to" value="" id="general-question">
+                      <label class="form-check-label" for="general-question">
+                        General Question
+                      </label>
+                    </div>
+                </fieldset>
+
+                <div class="row mb-3 ">
+                    <div class="col-sm-12 mb-3">
+                        <label for="how-we-can-help" class="form-label">How can we help?</label>
+                        <textarea name="" id="how-we-can-help" cols="30" rows="6" class="form-control" placeholder="Email Address"></textarea>
+                    </div>
+                </div>
+
+                <fieldset class="form-row mb-3"  >
+                    <legend class="col-sm-12">
+                        <p class="lead">Please tick to select your preffered mode of contact.</p>
+                    </legend>
+                    <div class="form-check form-check-inline ms-3">
+                        <input class="form-check-input" type="checkbox" value="" id="phoneCall">
+                        <label class="form-check-label" for="phoneCall">
+                            Phone call
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="Whatsapp" onclick="displayElementWithTheIDpassed('Whatsapp-no')">
+                      <label class="form-check-label" for="whatsapp">
+                        Whatsapp
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="sms">
+                        <label class="form-check-label" for="sms">
+                            SMS
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="E-mail">
+                      <label class="form-check-label" for="E-mail" onclick=>
+                        E-mail
+                      </label>
+                    </div>
+
+                    <div class="col-sm-5 my-2" id="Whatsapp-no" style="display: none;">
+                        <label for="" class="form-label">Whatsapp no. (if different)</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </fieldset>
+
+                <div class="w-100 text-center  mb-3">
+                    <input type="submit" class="form-control btn btn-success" value="Connect Now">
+                </div>
+        </form>
+    </div>
+</section>
+{% endblock main %}

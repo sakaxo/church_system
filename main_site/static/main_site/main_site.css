@@ -1,0 +1,55 @@
+
+/* prayer request */
+
+@media only screen and (max-width: 442px){
+ .form-check-inline{
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+ }
+}
+
+
+
+
+/* contact us  */
+.contact_section_01{
+    padding: 2em;
+}
+
+.contact_section_01 .contact-us-icon{
+    color: gray;
+    padding: 1.5em;
+}
+
+.contact_section_02{
+    color: black;
+    background: lightgray;
+    /*background-image: url(/static/main_site/img/contact1.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+    padding: 3em 2em;
+    /*position: relative;*/
+}
+
+/*#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.6;
+}
+*/
+
+.contact_section_02 .contact_us_text>h2{
+    padding-bottom: .5em;
+}
+
+.contact_section_02 .form_and_map{
+    padding:1.2em;
+}  /*contact us*/
+
+

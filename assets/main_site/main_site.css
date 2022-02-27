@@ -1,0 +1,43 @@
+/* home */
+
+.home_section_01{
+    /*wi*/
+}
+
+
+
+
+
+
+
+
+
+/* contact us  */
+.contact_section_01{
+    padding: 2em;
+}
+
+.contact_section_01 .contact-us-icon{
+    color: gray;
+    padding: 1.5em;
+}
+
+.contact_section_02{
+    color: whitesmoke;
+    background: lightgray;
+    background-image: url(/static/main_site/img/contact1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em 2em;
+
+}
+.contact_section_02 .contact_us_text>h2{
+    padding-bottom: .5em;
+}
+
+.contact_section_02 .form_and_map{
+    padding:1.2em;
+}  /*contact us*/
+
+
