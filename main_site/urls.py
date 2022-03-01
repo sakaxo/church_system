@@ -10,6 +10,7 @@ urlpatterns = [
     path('contact-us/',main_site_views.contactUsView, name="contact-us"),
     path('prayer-request/',main_site_views.prayerRequestView, name="prayer-request"),
     path('lets-connect/',main_site_views.letsConnectView, name="lets-connect"),
+    path('faq/',main_site_views.FAQView, name="faq"),
     path('i\'m-new/',main_site_views.newHereView, name="new-here"),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

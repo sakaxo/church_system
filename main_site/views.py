@@ -22,6 +22,9 @@ def letsConnectView(request):
     return render(request,'main_site/lets-connect.html')
 
 
+def FAQView(request):
+    return render(request,'main_site/frequently-asked-questions.html')
+
 
 def newHereView(request):
     return render(request,"main_site/new-here.html")

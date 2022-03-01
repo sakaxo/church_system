@@ -1,6 +1,111 @@
+/*== general color overlay start ==*/
 
-/* prayer request */
+.color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.5;
+}
 
+.high-z-index{
+    z-index: 500;
+}
+
+/*== general color overlay end ==*/
+
+/*== home start ==*/
+.home_section_01{
+    background-image: url(/static/main_site/img/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em 2em;
+    height: 35rem;
+    position: relative;
+}
+
+.home_section_01 .btn{
+    border: 1.5px solid orange;
+    color: white;
+    padding: 9px !important;
+}
+
+.hm-section .btn{
+    display: block;
+    text-transform: uppercase;
+    background-color: darkgray;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.hm-section .btn:hover{
+    opacity: .8;
+}
+
+@media only screen and (max-width:600px ){
+    .hm-section .btn{
+        width: 100% !important;
+    }
+}
+
+.home_section_02 .btn{
+    border: 1px dotted dimgray;
+}
+
+.home_section_02 img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 10px;
+    object-fit: contain;
+    display: block;
+}
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: gray;
+   opacity: 0.9;
+}
+
+.home_section_03{
+    background-color: gray;
+    clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+    color: black;
+    background-image: url(/static/main_site/img/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home_section_03 .link-container>a{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.home_section_03 .btn{
+    border: 2px solid gray;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width:400px ){
+    .home_section_01 .btn{
+        width: 100% !important;
+    }
+}
+
+/*== home end ==*/
+
+/*== prayer request start ==*/
 @media only screen and (max-width: 442px){
  .form-check-inline{
     display: block;
@@ -9,10 +114,10 @@
  }
 }
 
+/*== prayer request end ==*/
 
 
-
-/* contact us  */
+/*== contact us start ==*/
 .contact_section_01{
     padding: 2em;
 }
@@ -25,24 +130,13 @@
 .contact_section_02{
     color: black;
     background: lightgray;
-    /*background-image: url(/static/main_site/img/contact1.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*background-attachment: fixed;*/
+    background-image: url(/static/main_site/img/contact1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     padding: 3em 2em;
-    /*position: relative;*/
+    position: relative;
 }
-
-/*#color-overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: black;
-   opacity: 0.6;
-}
-*/
 
 .contact_section_02 .contact_us_text>h2{
     padding-bottom: .5em;
@@ -50,6 +144,8 @@
 
 .contact_section_02 .form_and_map{
     padding:1.2em;
-}  /*contact us*/
+}
+
+/*== contact us end ==*/
 
 

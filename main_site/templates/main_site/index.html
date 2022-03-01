@@ -1,7 +1,7 @@
 {% extends 'base-index.html' %}
 {% load static %}
 {% block title %}
-    Holy spirit center
+    Encounter International Christian Center
 {% endblock title %}
 
 {% block meta_tag %}
@@ -12,9 +12,132 @@
 {% block main %}
 
 
-    <section class="home_section_01 p-5">
-        <h1>HOME PAGE UNDER MAINTENANCE</h1>
+    <section class="row home_section_01">
+        <div class="color-overlay"></div>
+        <div class="col-12 my-auto p-3 text-center text-white high-z-index">
+            <h1 class="p-3 my-3">We would love to help YOU trust and follow Jesus Christ!</h1>
+
+            <a href="{% url 'main_site:contact-us'%}" class="p-sm-3  btn">Plan a visit</a>
+        </div>
+    </section>
+
+    <section class="row p-3 hm-section">
+        <div class="col-10 mx-auto p-2 text-center">
+            <hr>
+            <div class="row">
+                <div class="col-md-3 mb-1">
+                    <a href="{% url 'main_site:prayer-request' %}" class="btn" title="Share your request with us">Prayer Request</a>
+                </div>
+
+            <div class="col-md-3 mb-1">
+                <a href="{% url 'main_site:lets-connect' %}" class="btn" title="Connect with us now">lets connect</a>
+            </div>
+
+            <div class="col-md-3 mb-1">
+                <a href="" class="btn" title="Share my testimony ">my testimony</a>
+            </div>
+            <div class="col-md-3 ">
+                <a href="{% url 'main_site:faq' %}" class="btn " title="Frequently ask questions">faq</a>
+            </div>
+            </div> <hr>
+        </div>
+    </section>
+
+    <section class="row px-4 pt-2 mb-3 home_section_02">
+        <div class="col-12">
+            <p class="ps-3">WHY OUR CHURCH</p>
+
+            <div class="row px-4">
+                <div class="col-md-6 px-4 pb-2">
+                    <h3 class="mb-2">
+                        We are a church that
+                        believes in Jesus, a church that loves God and people
+                    </h3> <br>
+                    <p class="mb-2">
+                        We have a strong sense of community with parishioners. People and children of all ages here are encouraged to learn about their own
+                        faith and the role of the church in our community and worldwide.
+                    </p>
+                        <br>
+                    <a href="" class="btn ">Read More</a>
+                </div>
+
+                <div class="col-md-6 mx-auto px-4 ">
+                    <img src="{% static 'main_site/img/caro2.jpg' %}" alt="Why our church photo">
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
+    <section class="row px-4  home_section_03">
+            <div id="color-overlay"></div>
+            <div class="col-12 p-4 high-z-index">
+
+                <div class="row p-3 ">
+                    <div class="col-md-4 mb-3">
+                        <div class="mb-4 link-container">
+
+                            <a href="" ><span class="me-2"><i class="fa fa-solid fa-flag "></i></span>Our community </a>
+                        </div>
+
+                        <p>
+                            Our church is open and friendly with many social activities. To keep our church running smoothly, we have committees
+                            anyone can join.
+                        </p>
+                        <a href="" class="btn ">Continue reading </a>
+                    </div>
+
+                    <div class="col-md-4 mb-3 ">
+                        <div class="mb-4 link-container">
+                            <a href=""><span class="me-2"><i class="fa fa-solid fa-heart"></i></span> Our missions</a>
+                        </div>
+                        <p>
+                            The mission of our church is to bring awareness about God’s
+                            existence to people of all ages and encourage them to learn their own faith.
+                        </p>
+                        <a href="" class="btn ">Continue reading </a>
+                    </div>
+
+                    <div class="col-md-4 mb-3 ">
+                        <div class="mb-4 link-container">
+
+                            <a href=""><span class="me-2"><i class="fa fa-solid fa-eye"></i></span> join a group</a>
+                        </div>
+                        <p>
+                            If you wish to become a part of our chuch or a volunteer to help those in
+                            need, our community is awaiting you with our open hearts.
+                        </p>
+
+                        <a href="" class="btn ">Continue reading </a>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
 {% endblock main %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
