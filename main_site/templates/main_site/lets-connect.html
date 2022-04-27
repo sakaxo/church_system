@@ -14,20 +14,27 @@
 {% block main %}
 <section class="row m-3 p-sm-4 connect_section">
     <div class="col-10 mx-auto">
-        <form action="">
+        <form action="" id="form">
             <fieldset class="row mb-3">
                 <legend class="col-sm-12 text-center">
                     <h3> Fill the form to connect with us</h3>
                     <p class="lead">God bless you</p>
                 </legend>
-                <div class="col-sm-6 mb-3">
-                        <label for="" class="form-label">First name</label>
-                        <input type="text" class="form-control" placeholder="First name">
+                <div class="col-sm-6 mb-3 position-relative">
+                        <label for="fname" class="form-label">First name</label>
+                        <input id="fname" type="text" class="form-control" placeholder="First name">
+                        <span class="good">good</span>
+                        <span class="bad">bad</span>
+                        <small>errorr message</small>
+
                 </div>
 
-                <div class="col-sm-6 mb-3">
+                <div class="col-sm-6 mb-3 position-relative">
                         <label for="" class="form-label">Last name</label>
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <input id="lname" type="text" class="form-control" placeholder="Last name">
+                        <span class="good">good</span>
+                        <span class="bad">bad</span>
+                        <small>errorr message</small>
                 </div>
                 <div class="col-sm-6 mb-3">
                         <label for="" class="form-label">Email Address</label>

@@ -1,14 +1,19 @@
 :root {
   /*headeer variables*/
-  --header-bg-color: lightgray;
-  --header-link-color: black;
-  --header-link-hover-color: red;
+  --header-bg-color: #292b2c;
+  --header-link-color: white;
+  --header-link-hover-color: gray;
+  --header-border-bottom-color: gray;
+
+  /*navbar variables*/
   --navbar-link-color: white;
-  --navbar-link-hover-color: orange;
+  --navbar-link-hover-color: gray;
   --navbar-dropdown-menu-bg-color: #292b2c;
   --navbar-dropdown-menu-link-color: white;
-  --navbar-dropdown-menu-link-hover-color: orange ;
-  --navbar-dropdown-menu-li-borderbottom-color: orange;
+  --navbar-dropdown-menu-link-hover-color: gray;
+  --navbar-dropdown-menu-link-hover-bg-color: none;
+  /*--navbar-dropdown-menu-li-borderbottom-color: orange;*/
+
   /*footer variables*/
   --newsletter-subscription-color: white;
   --newsletter-subscription-bg-color: black;
@@ -22,6 +27,10 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -31,6 +40,30 @@ body{
   min-height: 100vh;
 }
 
+/*scrollbar style*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}   /*scroolbar*/
+
 
 /* header style start */
 header{
@@ -39,32 +72,33 @@ header{
 
 .wrapper{
   padding: 1%;
+  border-bottom: 1px solid var(--header-border-bottom-color);
 }
 
-.wp_header_left{
+.header-left{
   margin-left: 3%;
   padding-left: 3%;
 }
 
-.wp-header-right{
+.header_Right{
   text-align: right;
 }
 
-.wp_header_left>div>span>a,.wp_header_right>div>span>a{
+.header-left>div>span>a,.header-right>div>span>a{
   text-decoration: none;
   color: var(--header-link-color);
   transition: color 1.5s;
 }
 
-.wp-header a:hover{
+.header a:hover{
   color: var(--header-link-hover-color);
 }
 
-.wp-header a{
+.header a{
   padding: 5px;
 }
 
-.wp_header_center i{
+.header-center-element i{
   padding-right: 4px;
 }   /* header style end */
 
@@ -76,7 +110,7 @@ nav a{
 
 .nav-link{
   color: var(--navbar-link-color) !important;
-  transition: color 1.5s !important;
+  transition: color 0.4s !important;
 }
 
 .nav-link:hover{
@@ -107,13 +141,13 @@ nav a{
 
 .dropdown-menu a:hover{
   color: var(--navbar-dropdown-menu-link-hover-color);
-  background:none;
+  background:var(--navbar-dropdown-menu-link-hover-bg-color);
 }
-
+/*
 .dropdown-menu li:not(:last-child){
   border-bottom: 0.3px solid var(--navbar-dropdown-menu-li-borderbottom-color);
 }
-
+*/
 .dropdown:hover .dropdown-menu{
   display: block;
 }
@@ -134,17 +168,17 @@ nav a{
   padding-left: 0;
 }
 
-  .wp_header_right{
+  .header-right{
     display: none;
   }
 
-  .wp_header_center{
+  .header-center-element{
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 420px){
-  .wp_header_span{
+  .header-hide-1{
     display: none;
   }
 
